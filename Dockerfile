@@ -8,6 +8,8 @@ FROM node
 ADD . /doorman
 WORKDIR /doorman
 
+RUN mv /doorman/conf.example.js /doorman/conf.js
+
 # install your application's dependencies
 RUN npm install
 
